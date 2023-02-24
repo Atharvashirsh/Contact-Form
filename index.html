@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact ME</title>
+
+        <!-- CSS Linking -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Favicon Linking -->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+        <!-- Sweet Alert Linking -->
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link>  
+    </head>
+    <body>
+        <div class="container">
+            <div id="contact-form">
+                <h3>☎️ Get In Touch ☎️</h3>
+                <input type="text" name="name" id="name" placeholder="Enter your Name" required />
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required />
+                <textarea name="message" id="message" rows="3" placeholder="How can we help you?"></textarea>
+                <div class="captcha-preview"></div>
+                <div class="captcha-form">
+                    <input type="text" name="captcha" id="captcha" placeholder="Enter CAPTCHA here" />
+                    <button id="refresh"><img src="images/refresh.png" alt="refresh" width="16px" /></button>
+                </div>
+
+                <button type="submit" id="sendmail">Send</button>
+            </div>
+        </div>
+    </body>
+
+    <!-- Sweet Alert JavaScript Linking -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>  
+
+    <!-- Main JavaScript Linking -->
+    <script src="logic.js"></script>
+</html>
